@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Gulab Parmar - Computer Engineer Portfolio</title>
+    <meta name="description" content="Gulab Parmar - Computer Engineering Student Portfolio. Specializing in web development, game development, and AI-powered solutions.">
+    <meta name="keywords" content="Computer Engineer, Web Development, Game Development, AI Assistant, Portfolio, Gulab Parmar">
+    <meta name="author" content="Gulab Parmar">
+    <meta property="og:title" content="Gulab Parmar - Computer Engineer Portfolio">
+    <meta property="og:description" content="Computer Engineering Student specializing in web development, game development, and AI solutions">
+    <meta property="og:image" content="profile.jpg">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="profile.jpg">
+    <link rel="apple-touch-icon" href="profile.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <h2>Loading Portfolio...</h2>
+        </div>
+    </div>
+
+    <!-- Fallback: Hide loading screen if JavaScript fails -->
+    <noscript>
+        <style>#loading-screen { display: none !important; }</style>
+    </noscript>
+
+    <!-- Immediate fallback script -->
+    <script>
+        // Hide loading screen immediately as backup
+        setTimeout(function() {
+            var loading = document.getElementById('loading-screen');
+            if (loading) {
+                loading.style.display = 'none';
+            }
+        }, 1000);
+    </script>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">Gulab Parmar</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="greeting">Hello, I'm</h1>
+                    <h1 class="name">Gulab Parmar</h1>
+                    <h2 class="profession">
+                        And I'm a <span class="highlight">Computer Engineer</span>
+                    </h2>
+                    <p class="description">
+                        Motivated Computer Engineering student currently pursuing a Diploma at Ganpat University with 9.11 CGPA.
+                        Passionate about applying technical knowledge to real-world projects and continuously improving my skills
+                        in web development, game development, and AI-powered solutions.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-eye"></i> View My Work
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> Contact Me
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="profile.jpg" alt="Gulab Parmar" class="profile-img" loading="lazy">
+                        <div class="image-overlay"></div>
+                        <div class="image-glow"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/gulab-parmar" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/gulabparmar" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/gulab_parmar_175" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <span>Scroll Down</span>
+            </div>
+        </div>
+
+        <!-- Background Elements -->
+        <div class="hero-bg">
+            <div class="bg-shape shape-1"></div>
+            <div class="bg-shape shape-2"></div>
+            <div class="bg-shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                <p class="section-subtitle">Computer Engineering Student & Developer</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I am a passionate Computer Engineering student at Ganpat University, Mehsana, maintaining an impressive 9.11 CGPA.
+                        My journey in technology started with a strong foundation in programming fundamentals and has evolved into creating
+                        interactive web applications and AI-powered solutions.
+                    </p>
+                    <p>
+                        With expertise in multiple programming languages including C, C++, Java, Python, C#, and web technologies like
+                        HTML, CSS, JavaScript, PHP, and SQL, I specialize in developing user-friendly applications that solve real-world problems.
+                        My experience includes game development, web applications, and AI-powered campus assistance systems.
+                    </p>
+                </div>
+
+                <div class="about-details">
+                    <!-- Education -->
+                    <div class="education">
+                        <h3>Education</h3>
+                        <div class="education-item">
+                            <div class="education-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="education-details">
+                                <h4>B.Tech Computer Engineering</h4>
+                                <p>Ganpat University, Mehsana (2nd Year)</p>
+                            </div>
+                        </div>
+                        <div class="education-item">
+                            <div class="education-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="education-details">
+                                <h4>Diploma Computer Engineering</h4>
+                                <p>Ganpat University, Mehsana (2024-25)</p>
+                                <div class="cgpa-circle">
+                                    <div class="cgpa-progress" data-percent="91.1">
+                                        <div class="cgpa-text">9.11</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="education-item">
+                            <div class="education-icon">
+                                <i class="fas fa-school"></i>
+                            </div>
+                            <div class="education-details">
+                                <h4>SSC</h4>
+                                <p>Gaytri Vidhyalay, Tharad (2017-18)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Languages -->
+                    <div class="languages">
+                        <h3>Languages</h3>
+                        <div class="language-list">
+                            <span class="language-tag">Gujarati <small>(Native)</small></span>
+                            <span class="language-tag">Hindi <small>(Fluent)</small></span>
+                            <span class="language-tag">English <small>(Proficient)</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+                <p class="section-subtitle">Technical & Professional Expertise</p>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="skills-category">
+                <h3>Technical Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>HTML/CSS</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"><span>80%</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>JavaScript</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%"><span>60%</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Python</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 40%"><span>40%</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Java</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"><span>80%</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-php"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>PHP</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%"><span>60%</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>SQL</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"><span>70%</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>C/C++</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%"><span>60%</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>C#</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"><span>70%</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professional Skills -->
+            <div class="skills-category">
+                <h3>Professional Skills</h3>
+                <div class="professional-skills">
+                    <div class="circular-skill">
+                        <div class="circular-progress" data-percent="90">
+                            <div class="circular-inner">
+                                <div class="circular-text">90%</div>
+                            </div>
+                        </div>
+                        <h4>Problem Solving</h4>
+                    </div>
+
+                    <div class="circular-skill">
+                        <div class="circular-progress" data-percent="85">
+                            <div class="circular-inner">
+                                <div class="circular-text">85%</div>
+                            </div>
+                        </div>
+                        <h4>OOP Concepts</h4>
+                    </div>
+
+                    <div class="circular-skill">
+                        <div class="circular-progress" data-percent="80">
+                            <div class="circular-inner">
+                                <div class="circular-text">80%</div>
+                            </div>
+                        </div>
+                        <h4>Version Control</h4>
+                    </div>
+
+                    <div class="circular-skill">
+                        <div class="circular-progress" data-percent="85">
+                            <div class="circular-inner">
+                                <div class="circular-text">85%</div>
+                            </div>
+                        </div>
+                        <h4>Logic Building</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What I <span class="highlight">Offer</span></h2>
+                <p class="section-subtitle">My Expertise & Skills</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Full-stack web development using HTML, CSS, JavaScript, PHP, and SQL. Creating responsive, dynamic websites and web applications with modern design principles.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Game Development</h3>
+                    <p>Developing interactive browser-based games using HTML, CSS, and JavaScript. Creating engaging user experiences with win/loss detection and score tracking.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Solutions</h3>
+                    <p>Designing and developing AI-powered applications for campus assistance, navigation, and real-time alerts using modern web technologies.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Application Development</h3>
+                    <p>Developing applications using C, C++, Java, Python, and C# with focus on object-oriented programming and problem-solving.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+                <p class="section-subtitle">Recent Work & Achievements</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://papergames.io/en/tic-tac-toe" alt="Tic Tac Toe Web Game">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Tic Tac Toe Web Game</h3>
+                        <p>Developed a browser-based Tic Tac Toe game allowing two players to play interactively on a dynamic grid with win/loss detection.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1614680376739-414d95ff43df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Stone Paper Scissors Game">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Stone Paper Scissors Game</h3>
+                        <p>Created an interactive web-based Stone Paper Scissors game where a player competes against the computer with random move generation and score tracking.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="GanPat Guru AI">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>GanPat Guru – AI-Powered Hybrid Campus Assistant</h3>
+                        <p>Designed and developed a web prototype to assist students with campus navigation, event tracking, bus schedules, hostel management, and real-time safety alerts.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact <span class="highlight">Me</span></h2>
+                <p class="section-subtitle">Let's Work Together</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-description">
+                        I'm always open to discussing new opportunities, interesting projects, creative ideas, or opportunities to be part of your visions.
+                        Seeking opportunities to learn and grow in the IT industry.
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>parmargulab175@gmail.com</p>
+                            </div>
+                        </div>
+
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>Mehsana, Gujarat, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <h4>Follow Me</h4>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/gulab-parmar" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/CodeWithGulab" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.instagram.com/mr_parmar175" target="_blank" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Gulab Parmar. All rights reserved.</p>
+                <p>Developed with <i class="fas fa-heart"></i> by Gulab Parmar</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <div class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
