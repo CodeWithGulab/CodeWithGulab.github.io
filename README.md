@@ -1,2 +1,11 @@
-# CodeWithGulab.github.io
-My personal portfolio website showcasing my projects, skills, and contact details.
+# My Portfolio Website
+
+This is my personal portfolio website where I showcase my projects, skills, and contact information.
+
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
+
+## Live Website
+https://username.github.io
